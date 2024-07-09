@@ -1,0 +1,25 @@
+health_check = {
+  type                = "http"
+  check_interval_sec  = 1
+  healthy_threshold   = 4
+  timeout_sec         = 1
+  unhealthy_threshold = 5
+  response            = ""
+  proxy_header        = ""
+  port                = 8080
+  port_name           = ""
+  request             = ""
+  request_path        = ""
+  host                = ""
+  enable_log          = false
+}
+ip_address       = "100.100.100.100"
+name             = "test-https"
+network          = "bto-vpc-host-network"
+network_project  = "bto-vpc-host-6296f13b"
+lb_subnet        = "cio-internal-lb-subnet-np"
+project_id       = "gidc-test"
+region           = "northamerica-northeast1"
+fqdn             = "test.tsl.telus.com"
+ssl              = true
+ssl_certificates = [123]
